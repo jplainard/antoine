@@ -1,12 +1,18 @@
 
 'use client';
 
+
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Home( ) {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Head>
+        <title>ElectroRochelle</title>
+      </Head>
+      <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="px-6 py-4">
@@ -42,7 +48,7 @@ export default function Home( ) {
       <section 
         className="relative h-screen flex items-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.5)), url('https://readdy.ai/api/search-image?query=Beautiful%20panoramic%20view%20of%20La%20Rochelle%20historic%20port%20with%20famous%20medieval%20towers%20Tour%20de%20la%20Lanterne%20and%20Tour%20Saint-Nicolas%2C%20traditional%20French%20maritime%20architecture%2C%20stone%20buildings%20with%20white%20facades%2C%20boats%20and%20yachts%20in%20harbor%2C%20Atlantic%20ocean%2C%20golden%20hour%20lighting%2C%20professional%20tourism%20photography%20showcasing%20the%20coastal%20charm%20and%20heritage%20of%20this%20iconic%20French%20city&width=1920&height=1080&seq=la-rochelle-hero-towers&orientation=landscape')`
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.5)), url('/la-rochelle-hero-towers.jpg')`
         }}
       >
         <div className="w-full px-6">
@@ -185,9 +191,11 @@ export default function Home( ) {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://readdy.ai/api/search-image?query=Professional%20electrician%20Antoine%20working%20in%20front%20of%20iconic%20La%20Rochelle%20towers%2C%20wearing%20work%20uniform%20with%20safety%20equipment%2C%20friendly%20confident%20smile%2C%20electrical%20tools%2C%20old%20port%20and%20medieval%20towers%20Tour%20Saint-Nicolas%20in%20background%2C%20maritime%20heritage%20architecture%2C%20bright%20professional%20photography%2C%20coastal%20French%20city%20atmosphere&width=600&height=800&seq=antoine-la-rochelle&orientation=portrait"
+              <Image
+                src="/antoine.png"
                 alt="Antoine Lainard, électricien rochelais"
+                width={300}
+                height={400}
                 className="rounded-xl shadow-lg object-cover w-full h-96"
               />
             </div>
@@ -323,6 +331,7 @@ export default function Home( ) {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
