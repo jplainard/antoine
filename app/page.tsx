@@ -10,27 +10,30 @@ export default function Home( ) {
   return (
     <>
       <Head>
-        <title>AntoineÉlectricité</title>
+        <title>ÉlecRochelais Services</title>
       </Head>
       <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg flex items-center justify-center shadow-lg transform rotate-12">
-                  <i className="ri-flashlight-line text-yellow-400 text-xl transform -rotate-12"></i>
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-800 rounded-full"></div>
-                </div>
+            <Link href="/" className="flex items-center space-x-4">
+              {/* Nouveau logo maison + prise */}
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-800 via-blue-500 to-yellow-400 rounded-xl flex items-center justify-center shadow-lg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="18" width="20" height="14" rx="3" fill="#fff" stroke="#1e3a8a" strokeWidth="2"/>
+                  <polygon points="8,18 20,8 32,18" fill="#facc15" stroke="#1e3a8a" strokeWidth="2"/>
+                  <rect x="17" y="26" width="6" height="4" rx="1" fill="#1e3a8a"/>
+                  <circle cx="19" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="21" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="23" cy="28" r="0.7" fill="#fff"/>
+                </svg>
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h1>
-                <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
+              <div className="flex flex-col">
+                <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-800 via-blue-500 to-yellow-400 bg-clip-text text-transparent tracking-tight" style={{fontFamily: 'Montserrat, Pacifico, sans-serif', letterSpacing: '-1px'}}>ÉlecRochelais Services</span>
+                <span className="text-xs text-blue-800 font-medium mt-1">Votre électricien rochelais de confiance</span>
               </div>
-            </div>
+            </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-slate-700 hover:text-blue-800 font-medium">Accueil</Link>
               <Link href="/services" className="text-slate-700 hover:text-blue-800 font-medium">Services</Link>
@@ -247,7 +250,7 @@ export default function Home( ) {
       <section className="py-20 bg-blue-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir AntoineÉlectricité ?</h2>
+            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir ÉlecRochelais Services ?</h2>
             <p className="text-xl text-slate-600">Votre électricien de confiance dans la cité des tours</p>
           </div>
           
@@ -320,7 +323,7 @@ export default function Home( ) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>ÉlecRochelais Services</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -352,7 +355,7 @@ export default function Home( ) {
                 </div>
                 <div className="flex items-center space-x-2">
                   <i className="ri-mail-line"></i>
-                  <span>contact@AntoineÉlectricité.fr</span>
+                  <span>contact@elecrochelais.fr</span>
                 </div>
               </div>
             </div>
@@ -367,7 +370,7 @@ export default function Home( ) {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 ÉlecRochelais Services. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

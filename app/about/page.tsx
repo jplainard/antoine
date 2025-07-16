@@ -11,18 +11,21 @@ export default function About() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg flex items-center justify-center shadow-lg transform rotate-12">
-                  <i className="ri-flashlight-line text-yellow-400 text-xl transform -rotate-12"></i>
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-800 rounded-full"></div>
-                </div>
+            <Link href="/" className="flex items-center space-x-4">
+              {/* Nouveau logo maison + prise */}
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-800 via-blue-500 to-yellow-400 rounded-xl flex items-center justify-center shadow-lg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="18" width="20" height="14" rx="3" fill="#fff" stroke="#1e3a8a" strokeWidth="2"/>
+                  <polygon points="8,18 20,8 32,18" fill="#facc15" stroke="#1e3a8a" strokeWidth="2"/>
+                  <rect x="17" y="26" width="6" height="4" rx="1" fill="#1e3a8a"/>
+                  <circle cx="19" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="21" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="23" cy="28" r="0.7" fill="#fff"/>
+                </svg>
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h1>
-                <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
+              <div className="flex flex-col">
+                <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-800 via-blue-500 to-yellow-400 bg-clip-text text-transparent tracking-tight" style={{fontFamily: 'Montserrat, Pacifico, sans-serif', letterSpacing: '-1px'}}>ÉlecRochelais Services</span>
+                <span className="text-xs text-blue-800 font-medium mt-1">Votre électricien rochelais de confiance</span>
               </div>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
@@ -50,7 +53,7 @@ export default function About() {
             <i className="ri-anchor-line text-yellow-400 text-2xl"></i>
             <span className="text-yellow-400 font-semibold text-lg">Fier d'être rochelais</span>
           </div>
-          <h1 className="text-5xl font-bold text-white mb-6">À propos d'AntoineÉlectricité</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">À propos d'ÉlecRochelais Services</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Votre partenaire électricien de confiance, ancré dans le patrimoine rochelais depuis plus de 15 ans
           </p>
@@ -67,10 +70,10 @@ export default function About() {
                 <span className="text-blue-800 font-semibold">Rochelais de cœur et d'origine</span>
               </div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Antoine Lainard</h2>
-              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'AntoineÉlectricité</h3>
+              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'ÉlecRochelais Services</h3>
               <p className="text-lg text-slate-600 mb-6">
                 Né dans la cité des tours, j'ai grandi en admirant les majestueux phares de La Rochelle. 
-                Passionné par mon métier depuis plus de 15 ans, j'ai fondé AntoineÉlectricité avec une mission claire : 
+                Passionné par mon métier depuis plus de 15 ans, j'ai fondé ÉlecRochelais Services avec une mission claire : 
                 offrir des services électriques de qualité supérieure aux Rochelais et aux habitants de notre belle région.
               </p>
               <p className="text-lg text-slate-600 mb-8">
@@ -261,7 +264,7 @@ export default function About() {
       <section className="py-20 bg-blue-800">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">AntoineÉlectricité en chiffres</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">ÉlecRochelais Services en chiffres</h2>
             <p className="text-xl text-blue-100">Notre expérience au service de la satisfaction rochelaise</p>
           </div>
           
@@ -366,7 +369,7 @@ export default function About() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>ÉlecRochelais Services</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -413,7 +416,7 @@ export default function About() {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 ÉlecRochelais Services. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

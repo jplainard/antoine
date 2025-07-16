@@ -10,11 +10,22 @@ export default function Services() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center">
-                <i className="ri-flashlight-line text-white text-lg"></i>
+            <Link href="/" className="flex items-center space-x-4">
+              {/* Nouveau logo maison + prise */}
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-800 via-blue-500 to-yellow-400 rounded-xl flex items-center justify-center shadow-lg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="18" width="20" height="14" rx="3" fill="#fff" stroke="#1e3a8a" strokeWidth="2"/>
+                  <polygon points="8,18 20,8 32,18" fill="#facc15" stroke="#1e3a8a" strokeWidth="2"/>
+                  <rect x="17" y="26" width="6" height="4" rx="1" fill="#1e3a8a"/>
+                  <circle cx="19" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="21" cy="28" r="0.7" fill="#fff"/>
+                  <circle cx="23" cy="28" r="0.7" fill="#fff"/>
+                </svg>
               </div>
-              <h1 className="text-xl font-semibold text-blue-800">AntoineÉlectricité</h1>
+              <div className="flex flex-col">
+                <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-800 via-blue-500 to-yellow-400 bg-clip-text text-transparent tracking-tight" style={{fontFamily: 'Montserrat, Pacifico, sans-serif', letterSpacing: '-1px'}}>ÉlecRochelais Services</span>
+                <span className="text-xs text-blue-800 font-medium mt-1">Votre électricien rochelais de confiance</span>
+              </div>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-slate-700 hover:text-blue-800 font-medium">Accueil</Link>
@@ -339,7 +350,7 @@ export default function Services() {
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                   <i className="ri-flashlight-line text-white"></i>
                 </div>
-                <h3 className="text-lg font-semibold">AntoineÉlectricité</h3>
+                <h3 className="text-lg font-semibold">ÉlecRochelais Services</h3>
               </div>
               <p className="text-slate-400 mb-4">
                 Votre électricien de confiance à La Rochelle pour tous vos travaux électriques.
@@ -384,7 +395,7 @@ export default function Services() {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 ÉlecRochelais Services. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
