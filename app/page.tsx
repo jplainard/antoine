@@ -10,7 +10,7 @@ export default function Home( ) {
   return (
     <>
       <Head>
-        <title>ElectroRochelle</title>
+        <title>AntoineElectricité</title>
       </Head>
       <div className="min-h-screen bg-white">
       {/* Header */}
@@ -27,7 +27,7 @@ export default function Home( ) {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>ElectroRochelle</h1>
+                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h1>
                 <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Home( ) {
       <section className="py-20 bg-blue-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir ElectroRochelle ?</h2>
+            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir AntoineElectricité ?</h2>
             <p className="text-xl text-slate-600">Votre électricien de confiance dans la cité des tours</p>
           </div>
           
@@ -280,7 +280,7 @@ export default function Home( ) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>ElectroRochelle</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -312,7 +312,7 @@ export default function Home( ) {
                 </div>
                 <div className="flex items-center space-x-2">
                   <i className="ri-mail-line"></i>
-                  <span>contact@electrorochelle.fr</span>
+                  <span>contact@AntoineElectricité.fr</span>
                 </div>
               </div>
             </div>
@@ -327,7 +327,7 @@ export default function Home( ) {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 ElectroRochelle. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

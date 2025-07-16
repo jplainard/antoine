@@ -21,7 +21,7 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>ElectroRochelle</h1>
+                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h1>
                 <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
               </div>
             </Link>
@@ -50,7 +50,7 @@ export default function About() {
             <i className="ri-anchor-line text-yellow-400 text-2xl"></i>
             <span className="text-yellow-400 font-semibold text-lg">Fier d'être rochelais</span>
           </div>
-          <h1 className="text-5xl font-bold text-white mb-6">À propos d'ElectroRochelle</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">À propos d'AntoineElectricité</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Votre partenaire électricien de confiance, ancré dans le patrimoine rochelais depuis plus de 15 ans
           </p>
@@ -67,10 +67,10 @@ export default function About() {
                 <span className="text-blue-800 font-semibold">Rochelais de cœur et d'origine</span>
               </div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Antoine Lainard</h2>
-              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'ElectroRochelle</h3>
+              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'AntoineElectricité</h3>
               <p className="text-lg text-slate-600 mb-6">
                 Né dans la cité des tours, j'ai grandi en admirant les majestueux phares de La Rochelle. 
-                Passionné par mon métier depuis plus de 15 ans, j'ai fondé ElectroRochelle avec une mission claire : 
+                Passionné par mon métier depuis plus de 15 ans, j'ai fondé AntoineElectricité avec une mission claire : 
                 offrir des services électriques de qualité supérieure aux Rochelais et aux habitants de notre belle région.
               </p>
               <p className="text-lg text-slate-600 mb-8">
@@ -261,7 +261,7 @@ export default function About() {
       <section className="py-20 bg-blue-800">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">ElectroRochelle en chiffres</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">AntoineElectricité en chiffres</h2>
             <p className="text-xl text-blue-100">Notre expérience au service de la satisfaction rochelaise</p>
           </div>
           
@@ -366,7 +366,7 @@ export default function About() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>ElectroRochelle</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -413,7 +413,7 @@ export default function About() {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 ElectroRochelle. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
