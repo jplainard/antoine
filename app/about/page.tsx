@@ -21,7 +21,7 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h1>
+                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h1>
                 <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
               </div>
             </Link>
@@ -42,7 +42,7 @@ export default function About() {
       <section 
         className="relative py-32 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('https://readdy.ai/api/search-image?query=Stunning%20aerial%20view%20of%20La%20Rochelle%20historic%20harbor%20with%20medieval%20towers%20Tour%20Saint-Nicolas%20and%20Tour%20de%20la%20Chaine%2C%20old%20port%20filled%20with%20boats%20and%20yachts%2C%20traditional%20French%20coastal%20architecture%2C%20stone%20buildings%20with%20white%20facades%2C%20maritime%20heritage%2C%20Atlantic%20ocean%20background%2C%20golden%20hour%20lighting%2C%20professional%20drone%20photography%20showcasing%20the%20beauty%20and%20charm%20of%20this%20iconic%20French%20coastal%20city&width=1920&height=800&seq=la-rochelle-aerial-heritage&orientation=landscape')`
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('/la-rochelle-tours.jpg')`
         }}
       >
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -50,7 +50,7 @@ export default function About() {
             <i className="ri-anchor-line text-yellow-400 text-2xl"></i>
             <span className="text-yellow-400 font-semibold text-lg">Fier d'être rochelais</span>
           </div>
-          <h1 className="text-5xl font-bold text-white mb-6">À propos d'AntoineElectricité</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">À propos d'AntoineÉlectricité</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Votre partenaire électricien de confiance, ancré dans le patrimoine rochelais depuis plus de 15 ans
           </p>
@@ -67,10 +67,10 @@ export default function About() {
                 <span className="text-blue-800 font-semibold">Rochelais de cœur et d'origine</span>
               </div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Antoine Lainard</h2>
-              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'AntoineElectricité</h3>
+              <h3 className="text-xl text-blue-800 font-semibold mb-6">Électricien expert - Fondateur d'AntoineÉlectricité</h3>
               <p className="text-lg text-slate-600 mb-6">
                 Né dans la cité des tours, j'ai grandi en admirant les majestueux phares de La Rochelle. 
-                Passionné par mon métier depuis plus de 15 ans, j'ai fondé AntoineElectricité avec une mission claire : 
+                Passionné par mon métier depuis plus de 15 ans, j'ai fondé AntoineÉlectricité avec une mission claire : 
                 offrir des services électriques de qualité supérieure aux Rochelais et aux habitants de notre belle région.
               </p>
               <p className="text-lg text-slate-600 mb-8">
@@ -204,7 +204,7 @@ export default function About() {
             </div>
             <div>
               <img 
-                src="https://readdy.ai/api/search-image?query=Beautiful%20panoramic%20view%20of%20La%20Rochelle%20old%20port%20at%20sunset%20with%20famous%20medieval%20towers%20Tour%20Saint-Nicolas%20and%20Tour%20de%20la%20Chaine%2C%20colorful%20houses%20reflection%20in%20harbor%20water%2C%20traditional%20French%20coastal%20architecture%2C%20boats%20and%20yachts%2C%20golden%20hour%20lighting%2C%20romantic%20atmosphere%2C%20professional%20tourism%20photography%20highlighting%20the%20maritime%20heritage%20and%20beauty%20of%20this%20iconic%20French%20city&width=600&height=400&seq=la-rochelle-sunset-panorama&orientation=landscape"
+                src="/la-rochelle-bg.jpg"
                 alt="Vue panoramique de La Rochelle au coucher du soleil"
                 className="rounded-xl shadow-lg object-cover w-full h-80"
               />
@@ -261,7 +261,7 @@ export default function About() {
       <section className="py-20 bg-blue-800">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">AntoineElectricité en chiffres</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">AntoineÉlectricité en chiffres</h2>
             <p className="text-xl text-blue-100">Notre expérience au service de la satisfaction rochelaise</p>
           </div>
           
@@ -366,7 +366,7 @@ export default function About() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -413,7 +413,7 @@ export default function About() {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

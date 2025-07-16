@@ -14,7 +14,7 @@ export default function Services() {
               <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center">
                 <i className="ri-flashlight-line text-white text-lg"></i>
               </div>
-              <h1 className="text-xl font-semibold text-blue-800">AntoineElectricité</h1>
+              <h1 className="text-xl font-semibold text-blue-800">AntoineÉlectricité</h1>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-slate-700 hover:text-blue-800 font-medium">Accueil</Link>
@@ -33,7 +33,7 @@ export default function Services() {
       <section 
         className="relative py-20 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('https://readdy.ai/api/search-image?query=Professional%20electrical%20work%20in%20La%20Rochelle%20with%20medieval%20towers%20in%20background%2C%20electrician%20installing%20modern%20electrical%20systems%2C%20electrical%20tools%20and%20equipment%2C%20safety%20measures%2C%20Tour%20Saint-Nicolas%20and%20Tour%20de%20la%20Chaine%20visible%2C%20maritime%20heritage%20architecture%2C%20bright%20professional%20lighting%2C%20technical%20expertise%20demonstration&width=1920&height=600&seq=services-la-rochelle-header&orientation=landscape')`
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('/la-rochelle-bg.jpg')`
         }}
       >
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -86,7 +86,7 @@ export default function Services() {
               </div>
               <div>
                 <img 
-                  src="https://readdy.ai/api/search-image?query=Modern%20electrical%20installation%20in%20new%20construction%2C%20professional%20electrician%20installing%20electrical%20panel%2C%20clean%20wiring%20system%2C%20bright%20workshop%20lighting%2C%20safety%20equipment%2C%20professional%20electrical%20work%2C%20construction%20site%20background&width=600&height=400&seq=installation-neuve&orientation=landscape"
+                  src="/la-rochelle-bg.jpg"
                   alt="Installation électrique neuve"
                   className="rounded-xl shadow-lg object-cover w-full h-80"
                 />
@@ -132,7 +132,7 @@ export default function Services() {
               </div>
               <div className="lg:order-1">
                 <img 
-                  src="https://readdy.ai/api/search-image?query=Electrical%20renovation%20work%20in%20residential%20home%2C%20electrician%20upgrading%20old%20electrical%20system%2C%20modern%20electrical%20panel%20installation%2C%20renovation%20tools%20and%20equipment%2C%20professional%20work%20environment%2C%20safety%20measures&width=600&height=400&seq=renovation-electrique&orientation=landscape"
+                  src="/la-rochelle-bg.jpg"
                   alt="Rénovation électrique"
                   className="rounded-xl shadow-lg object-cover w-full h-80"
                 />
@@ -184,7 +184,7 @@ export default function Services() {
                 </div>
                 <div>
                   <img 
-                    src="https://readdy.ai/api/search-image?query=Emergency%20electrical%20repair%20service%2C%20electrician%20with%20flashlight%20working%20at%20night%2C%20electrical%20fault%20diagnosis%2C%20emergency%20van%20with%20tools%2C%20urgent%20electrical%20intervention%2C%20professional%20emergency%20response&width=600&height=400&seq=depannage-urgence&orientation=landscape"
+                    src="/la-rochelle-bg.jpg"
                     alt="Dépannage électrique d'urgence"
                     className="rounded-xl shadow-lg object-cover w-full h-80"
                   />
@@ -339,7 +339,7 @@ export default function Services() {
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                   <i className="ri-flashlight-line text-white"></i>
                 </div>
-                <h3 className="text-lg font-semibold">AntoineElectricité</h3>
+                <h3 className="text-lg font-semibold">AntoineÉlectricité</h3>
               </div>
               <p className="text-slate-400 mb-4">
                 Votre électricien de confiance à La Rochelle pour tous vos travaux électriques.
@@ -384,7 +384,7 @@ export default function Services() {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

@@ -31,28 +31,16 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('https://readdy.ai/api/form-submission', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-          ...formData,
-          form_id: 'contact-electrorachelle'
-        })
+      // Ici, vous pouvez intégrer votre propre logique d'envoi de formulaire (ex: email, service tiers, etc.)
+      setIsSubmitted(true);
+      setFormData({
+        nom: '',
+        email: '',
+        telephone: '',
+        service: '',
+        urgence: 'non',
+        message: ''
       });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({
-          nom: '',
-          email: '',
-          telephone: '',
-          service: '',
-          urgence: 'non',
-          message: ''
-        });
-      }
     } catch (error) {
       console.error('Erreur lors de l\'envoi:', error);
     }
@@ -68,7 +56,7 @@ export default function Contact() {
               <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center">
                 <i className="ri-flashlight-line text-white text-lg"></i>
               </div>
-              <h1 className="text-xl font-semibold text-blue-800">AntoineElectricité</h1>
+              <h1 className="text-xl font-semibold text-blue-800">AntoineÉlectricité</h1>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-slate-700 hover:text-blue-800 font-medium">Accueil</Link>
@@ -87,7 +75,7 @@ export default function Contact() {
       <section 
         className="relative py-20 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('https://readdy.ai/api/search-image?query=Beautiful%20contact%20and%20communication%20concept%20with%20La%20Rochelle%20towers%20in%20background%2C%20professional%20business%20setting%2C%20phone%20and%20email%20communication%20symbols%2C%20modern%20office%20environment%20with%20view%20of%20Tour%20Saint-Nicolas%20and%20harbor%2C%20welcoming%20atmosphere%2C%20maritime%20heritage%20backdrop%2C%20bright%20natural%20lighting&width=1920&height=600&seq=contact-la-rochelle-header&orientation=landscape')`
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('/la-rochelle-bg.jpg')`
         }}
       >
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -380,7 +368,7 @@ export default function Contact() {
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                   <i className="ri-flashlight-line text-white"></i>
                 </div>
-                <h3 className="text-lg font-semibold">AntoineElectricité</h3>
+                <h3 className="text-lg font-semibold">AntoineÉlectricité</h3>
               </div>
               <p className="text-slate-400 mb-4">
                 Votre électricien de confiance à La Rochelle pour tous vos travaux électriques.
@@ -425,7 +413,7 @@ export default function Contact() {
           </div>
 
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

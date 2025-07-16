@@ -10,7 +10,7 @@ export default function Home( ) {
   return (
     <>
       <Head>
-        <title>AntoineElectricité</title>
+        <title>AntoineÉlectricité</title>
       </Head>
       <div className="min-h-screen bg-white">
       {/* Header */}
@@ -27,7 +27,7 @@ export default function Home( ) {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h1>
+                <h1 className="text-xl font-bold text-blue-800" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h1>
                 <p className="text-xs text-slate-500 -mt-1">Ville des tours</p>
               </div>
             </div>
@@ -48,41 +48,81 @@ export default function Home( ) {
       <section 
         className="relative h-screen flex items-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.5)), url('/la-rochelle-hero-towers.jpg')`
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.75), rgba(30, 58, 138, 0.5)), url('/la-rochelle-bg.jpg')`
         }}
       >
         <div className="w-full px-6">
+          {/* Bandeau urgence */}
+          <div className="absolute top-0 left-0 w-full flex justify-center z-10">
+            <div className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-b-xl shadow-lg flex items-center gap-3 animate-pulse font-bold text-lg">
+              <i className="ri-flashlight-line text-2xl"></i>
+              Urgence électricité à La Rochelle : intervention rapide 24h/7j !
+              <a href="tel:0687654321" className="ml-4 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Appelez le 06 87 65 43 21</a>
+            </div>
+          </div>
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-            <div className="max-w-2xl">
-              <div className="flex items-center space-x-2 mb-4">
-                <i className="ri-map-pin-line text-yellow-400 text-xl"></i>
-                <span className="text-yellow-400 font-semibold">La Rochelle - Ville des tours</span>
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                Votre électricien de confiance au cœur de La Rochelle
-              </h1>
-              <p className="text-xl text-gray-200 mb-8">
-                Installation, rénovation et dépannage électrique dans la cité rochelaise et sa région. 
-                Service d'urgence disponible 24h/7j pour votre sécurité.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:0546123456" className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 text-center whitespace-nowrap">
-                  <i className="ri-phone-line mr-2"></i>Appeler maintenant
-                </a>
-                <Link href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-800 text-center whitespace-nowrap">
-                  Devis gratuit
-                </Link>
+            <div className="max-w-2xl relative">
+              <div className="absolute inset-0 -left-6 -right-6 -top-6 -bottom-6 bg-blue-900/50 rounded-2xl z-0"></div>
+              <div className="relative z-10 p-8 flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/antoine.png"
+                    alt="Antoine souriant sur fond blanc"
+                    width={120}
+                    height={160}
+                    className="rounded-xl shadow-lg object-cover border-4 border-yellow-400"
+                    priority
+                  />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-2 mb-4">
+                    <i className="ri-map-pin-line text-yellow-400 text-xl"></i>
+                    <span className="text-yellow-400 font-semibold">La Rochelle - Ville des tours</span>
+                  </div>
+                  <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+                    Votre électricien de confiance au cœur de La Rochelle
+                  </h1>
+                  <p className="text-xl text-gray-100 mb-8 drop-shadow-xl">
+                    Installation, rénovation et dépannage électrique dans la cité rochelaise et sa région. 
+                    Service d'urgence disponible 24h/7j pour votre sécurité.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:0546123456" className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 text-center whitespace-nowrap">
+                      <i className="ri-phone-line mr-2"></i>Appeler maintenant
+                    </a>
+                    <Link href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-800 text-center whitespace-nowrap">
+                      Devis gratuit
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="mt-10 md:mt-0 md:ml-16">
-              <Image
-                src="/antoine.png"
-                alt="Antoine souriant sur fond blanc"
-                width={160}
-                height={210}
-                className="rounded-xl shadow-lg object-cover"
-                priority
-              />
+          </div>
+        </div>
+      </section>
+
+      {/* Section réalisations à La Rochelle */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-800 mb-4">Nos réalisations à La Rochelle</h2>
+            <p className="text-xl text-slate-600">Quelques exemples de chantiers électriques réalisés dans la ville et ses environs</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-blue-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
+              <Image src="/antoine.png" alt="Antoine sur chantier" width={120} height={160} className="rounded-lg mb-4 object-cover" />
+              <h3 className="text-lg font-semibold text-blue-800 mb-2">Rénovation d'appartement - Vieux Port</h3>
+              <p className="text-slate-600 text-center">Remise aux normes et installation d'éclairage LED dans un appartement avec vue sur les tours.</p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
+              <i className="ri-building-line text-blue-800 text-5xl mb-4"></i>
+              <h3 className="text-lg font-semibold text-blue-800 mb-2">Commerce - Quartier Saint-Nicolas</h3>
+              <p className="text-slate-600 text-center">Installation complète d'un système de sécurité et interphonie pour un commerce local.</p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
+              <i className="ri-home-heart-line text-blue-800 text-5xl mb-4"></i>
+              <h3 className="text-lg font-semibold text-blue-800 mb-2">Maison individuelle - Les Minimes</h3>
+              <p className="text-slate-600 text-center">Modernisation du tableau électrique et installation de prises connectées.</p>
             </div>
           </div>
         </div>
@@ -207,7 +247,7 @@ export default function Home( ) {
       <section className="py-20 bg-blue-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir AntoineElectricité ?</h2>
+            <h2 className="text-4xl font-bold text-slate-800 mb-4">Pourquoi choisir AntoineÉlectricité ?</h2>
             <p className="text-xl text-slate-600">Votre électricien de confiance dans la cité des tours</p>
           </div>
           
@@ -280,7 +320,7 @@ export default function Home( ) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineElectricité</h3>
+                  <h3 className="text-lg font-bold" style={{fontFamily: '"Pacifico", serif'}}>AntoineÉlectricité</h3>
                   <p className="text-xs text-slate-400 -mt-1">Ville des tours</p>
                 </div>
               </div>
@@ -312,7 +352,7 @@ export default function Home( ) {
                 </div>
                 <div className="flex items-center space-x-2">
                   <i className="ri-mail-line"></i>
-                  <span>contact@AntoineElectricité.fr</span>
+                  <span>contact@AntoineÉlectricité.fr</span>
                 </div>
               </div>
             </div>
@@ -327,7 +367,7 @@ export default function Home( ) {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AntoineElectricité. Tous droits réservés.</p>
+            <p>&copy; 2024 AntoineÉlectricité. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
