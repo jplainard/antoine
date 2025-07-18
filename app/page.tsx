@@ -234,13 +234,15 @@ export default function Home( ) {
               </Link>
             </div>
             <div className="relative">
-              <Image
-                src="/antoine.png"
-                alt="Antoine Lainard, électricien rochelais"
-                width={300}
-                height={400}
-                className="rounded-xl shadow-lg object-cover w-full h-96"
-              />
+              <div className="relative w-40 h-56 mx-auto">
+                <Image
+                  src="/antoine.png"
+                  alt="Antoine Lainard, électricien rochelais"
+                  fill
+                  className="rounded-xl shadow-lg object-cover"
+                  sizes="160px"
+                />
+              </div>
             </div>
           </div>
         </div>
